@@ -1,3 +1,22 @@
 body {
     background-image: url("../images/dust_scratches.png");
 }
+.imageStyle {
+    display: inline-block;
+    margin: 2px;
+}
+.ratingStyle {
+    color: #ffffff;
+    background-color: #343a40;
+    width: 100%;
+    padding: 2px;
+}
+.addBtnStyle {
+    margin: 2px;
+}
+.buttonBackground {
+    background-color: #343a40;
+    width: 100%;
+    border-top: 1px solid #6c757d;
+    padding: 3px 0;
+}

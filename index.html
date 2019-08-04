@@ -17,16 +17,21 @@
 </head>
 
 <body>
+    <!-- navbar + search bar -->
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" style = "color: #ffffff;">Gif In A Jiff!</a>
         <form class="form-inline">
           <input class="form-control mr-sm-2" id="topic-search" type="search" placeholder="MORE GIFS!" aria-label="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Add New</button>
+          <button class="btn btn-secondary my-2 my-sm-0" id="topic-add" type="submit">Add New</button>
         </form>
       </nav>
-      <div class="btn-group" id="gifBtns" role="group" aria-label="giffy search buttons" style="margin: 0 1px;">
+      <!-- buttons will append here -->
+      <div class="buttonBackground" id="gifBtns" role="group" aria-label="giffy search buttons">
         
       </div>
+      <!-- gifs will appear here -->
+      <div id="gifGoHere"></div>
+
     <!--jQuery link-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--JS link-->
