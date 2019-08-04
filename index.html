@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
 
 
 </head>
@@ -19,18 +21,20 @@
 <body>
     <!-- navbar + search bar -->
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" style = "color: #ffffff;">Gif In A Jiff!</a>
+        <a class="navbar-brand" style="color: #ffffff; font-weight: bolder; font-size: 32px;">Gif In A Jiff!</a>
         <form class="form-inline">
-          <input class="form-control mr-sm-2" id="topic-search" type="search" placeholder="MORE GIFS!" aria-label="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" id="topic-add" type="submit">Add New</button>
+            <input class="form-control mr-sm-2" id="topic-search" type="search" placeholder="MORE GIFS!"
+                aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" id="topic-add" type="submit">Add New</button>
         </form>
-      </nav>
-      <!-- buttons will append here -->
-      <div class="buttonBackground" id="gifBtns" role="group" aria-label="giffy search buttons">
-        
-      </div>
-      <!-- gifs will appear here -->
-      <div id="gifGoHere"></div>
+    </nav>
+
+    <!-- buttons will append here -->
+    <div class="buttonBackground" id="gifBtns" role="group" aria-label="giffy search buttons">
+
+    </div>
+    <!-- gifs will appear here -->
+    <div id="gifGoHere"></div>
 
     <!--jQuery link-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
