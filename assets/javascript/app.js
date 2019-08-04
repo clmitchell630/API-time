@@ -69,8 +69,26 @@ $(function () {
                 gifDiv.append(p);
                 gifDiv.append(gifImage);
 
+                $(gifImage).on("click", gifToggle);
                 $("#gifGoHere").prepend(gifDiv);
             }
-        })
+        });
+    }
+
+    function gifToggle() {
+        var gifState = $(this).attr("data-state");
+        console.log("The gif is: " + gifState);
+        
+        if(gifState === "still") {
+            $(this).attr("src",$(this).attr("data-animate"));
+            $(this).attr("data-state", "animate");
+        }
+
+        if(gifState === "animate") {
+            $(this).attr("src", $(this).attr("data-still"));
+            $(this).attr("data-state", "still");
+        }
+
+
     }
 });
